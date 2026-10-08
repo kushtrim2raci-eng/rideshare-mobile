@@ -28,7 +28,7 @@ Hap adresën që shfaq terminali, zakonisht http://localhost:3000.
 6. E: `src/app/udhetimi/[id]/kerkesa/page.tsx` — kërkesa e simuluar.
 7. G: `src/app/udhetimi/[id]/not-found.tsx` — ID e panjohur.
 
-Rrugët janë brenda `aplikacioni/`. Kërkesa nuk ruhet dhe nuk dërgohet te shoferi; nuk ka databazë ose pagesa.
+Rrugët janë brenda `aplikacioni/`. Kërkesa nuk ruhet dhe nuk dërgohet te shoferi; udhëtimet lexohen nga Neon dhe nuk ka pagesa.
 
 ## Provat manuale
 
@@ -52,3 +52,7 @@ npm run build
 Ruaj raportin pranë këtij README. Pasi t’i provosh vetë ekranet me një koleg, përditëso raportin me rezultatet reale. Në repository-n ekzistues bëj Commit me përmbledhjen `Java 3: kartat dhe faqet`, pastaj Push origin. Mos ngarko `node_modules`, `.next` ose `.env`.
 
 Te formulari i profesorit zgjidh Java 3 dhe vendos https://github.com/kushtrim2raci-eng/rideshare-mobile. Lexo komentin e kontrollit automatik. Nëse ka mangësi, korrigjoji dhe komento `rikontrollo` në të njëjtin dorëzim.
+
+## Java 4: Neon dhe PostgreSQL
+
+Kodi i Javës 4 zëvendëson vargun me lexim SQL. Krijo databazën Neon Free, ekzekuto aplikacioni/schema.sql në SQL Editor dhe vendos DATABASE_URL në aplikacioni/.env.local. Pastaj nis npm run dev brenda aplikacioni/. Tri provat dhe statusi i tyre janë te java-04.md. Përfundo provat para Commit dhe Push në repository-n ekzistues. Për dorëzim zgjidh Java 4 në formularin e profesorit dhe përdor linkun kryesor të repository-t.
