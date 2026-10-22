@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
+import Pwa from "@/components/Pwa";
 
 export const metadata: Metadata = {
   title: "RideShare · Udhëtimet për AAB",
@@ -8,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  return <html lang="sq"><body>{children}</body></html>;
+  return <html lang="sq"><body><Pwa />{children}</body></html>;
 }
