@@ -29,9 +29,10 @@ export default async function Detajet({
       <p>Ora: {udhetim.ora}</p>
       <p>Vendtakimi: {udhetim.vendtakimi}</p>
       <p>Vende të lira: {udhetim.vende}</p>
+      <p>Ky është simulim: kërkesa nuk ruhet, vendi nuk rezervohet dhe shoferi nuk njoftohet.</p>
       {udhetim.vende > 0 ? (
         <Link className="action" href={`/udhetimi/${id}/kerkesa`}>
-          Kërko vend
+          Provo kërkesën · simulim
         </Link>
       ) : <button className="action" disabled>Nuk ka vende të lira</button>}
     </main>
