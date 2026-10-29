@@ -1,6 +1,6 @@
 # RideShare · Java 7
 
-Raporti i Javes 7. Kodi dhe raporti ruhen ne GitHub; Issue i dorezimit ende nuk eshte hapur.
+Raporti i Javes 7. Kodi dhe raporti ruhen ne GitHub.
 
 ## Rasti im
 GitHub: kushtrim2raci-eng
@@ -31,25 +31,25 @@ Keshtu e kuptoj kufirin e veprimit para se te klikoj. Kushti vende > 0 lejon hap
 Para: https://github.com/kushtrim2raci-eng/rideshare-mobile/commit/6396e1dcc091988da7011676f9a1de2cbbf335b2
 Pas: https://github.com/kushtrim2raci-eng/rideshare-mobile/commit/a70ff6ca2040f550e64a96cb9b4a1071188ea014
 
-Versioni Para ruan kodin para korrigjimit; versioni Pas ruan ndryshimin ne faqen e detajeve. Raporti ruhet me nje commit pasues. Issue i Javes 7 ende nuk eshte hapur.
+Versioni Para ruan kodin para korrigjimit; versioni Pas ruan ndryshimin ne faqen e detajeve. Raporti ruhet me nje commit pasues.
 
 ## Provat qe bera
 Provat e meposhtme i bera ne aplikacionin tim lokal dhe dergova pamjet e rezultateve.
 
 ### Prova 1
 Hapat: Hapa detajet e udhetimit Fushe Kosove → AAB dhe kontrollova oren, vendtakimin, vendet dhe butonin.
-Pritshmeria: Te shfaqen detajet e ketij udhetimi dhe te jete e qarte se kerkesa eshte vetem simulim.
-Vezhgimi: U shfaq ora 08:15, vendtakimi “Te stacioni kryesor” dhe 1 vend i lire. Poshte tyre u shfaq sqarimi se kerkesa nuk ruhet, vendi nuk rezervohet dhe shoferi nuk njoftohet. Butoni quhej “Provo kerkesen · simulim”. Pamja ime verteton detajet e shfaqura; nuk kam perfshire pamje te listes per krahasim ne kete prove.
+Pritshmëria: Te shfaqen detajet e ketij udhetimi dhe te jete e qarte se kerkesa eshte vetem simulim.
+Vëzhgimi: U shfaq ora 08:15, vendtakimi “Te stacioni kryesor” dhe 1 vend i lire. Poshte tyre u shfaq sqarimi se kerkesa nuk ruhet, vendi nuk rezervohet dhe shoferi nuk njoftohet. Butoni quhej “Provo kerkesen · simulim”. Pamja ime verteton detajet e shfaqura; nuk kam perfshire pamje te listes per krahasim ne kete prove.
 
 ### Prova 2
 Hapat: Provova kerkesen per udhetimin nga Prishtina dhe pastaj per udhetimin nga Fushe Kosova.
-Pritshmeria: Pas klikimit te shfaqet nje mesazh simulimi, pa u paraqitur si rezervim i konfirmuar.
-Vezhgimi: Ne te dyja rastet u shfaq “Simulim: Ne pritje”. Mesazhi perkates tregonte se kerkesa per Prishtine ose Fushe Kosove nuk ishte derguar te shoferi. U shfaq edhe sqarimi se ruajtja dhe konfirmimi real do te shtohen me vone. Nga kjo kuptova se “Ne pritje” ketu eshte vetem mesazh ne ekran. Pamjet tregojne mesazhet; nuk jane kontroll i drejtperdrejte i databazes.
+Pritshmëria: Pas klikimit te shfaqet nje mesazh simulimi, pa u paraqitur si rezervim i konfirmuar.
+Vëzhgimi: Ne te dyja rastet u shfaq “Simulim: Ne pritje”. Mesazhi perkates tregonte se kerkesa per Prishtine ose Fushe Kosove nuk ishte derguar te shoferi. U shfaq edhe sqarimi se ruajtja dhe konfirmimi real do te shtohen me vone. Nga kjo kuptova se “Ne pritje” ketu eshte vetem mesazh ne ekran. Pamjet tregojne mesazhet; nuk jane kontroll i drejtperdrejte i databazes.
 
 ### Prova 3
 Hapat: Hapa nje udhetim tjeter, Lipjan → AAB, te /udhetimi/3, i cili kishte 0 vende te lira.
-Pritshmeria: Te shfaqet se nuk ka vende dhe te mos mund ta hap kerkesen permes butonit.
-Vezhgimi: U shfaq ora 07:45, vendtakimi “Qendra e qytetit” dhe 0 vende te lira. Butoni ishte i caktivizuar me tekstin “Nuk ka vende te lira”. Kjo prove perdori nje udhetim tjeter ekzistues; nuk ndryshova numrin e vendeve te te njejtit udhetim ne databaze.
+Pritshmëria: Te shfaqet se nuk ka vende dhe te mos mund ta hap kerkesen permes butonit.
+Vëzhgimi: U shfaq ora 07:45, vendtakimi “Qendra e qytetit” dhe 0 vende te lira. Butoni ishte i caktivizuar me tekstin “Nuk ka vende te lira”. Kjo prove perdori nje udhetim tjeter ekzistues; nuk ndryshova numrin e vendeve te te njejtit udhetim ne databaze.
 
 ## Ndryshimi i ri
 Ndryshova zgjedhjen nga nje udhetim qe kishte vende te udhetimi nga Lipjani qe kishte 0 vende. Te udhetimi me vende mund ta hapja simulimin, ndersa te Lipjani butoni ishte i caktivizuar. Sjellja perputhet me kushtin vende > 0 ne kod.
